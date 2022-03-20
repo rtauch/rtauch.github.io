@@ -4,6 +4,7 @@ nav ul {
     top:-8px;
     text-decoration: none;
     color:blue;
+    z-index:2;
 }
 
 nav li {
