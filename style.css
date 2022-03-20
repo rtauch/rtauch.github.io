@@ -1,0 +1,86 @@
+nav ul {
+    margin: 0;
+    padding: 0;
+    top:-8px;
+    text-decoration: none;
+    color:blue;
+}
+
+nav li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 2px;
+    /* background: rgb(219, 159, 159); */
+    display: block;
+    padding: 0.25em 0 0.25em 0.5em;
+    width: 6.5em;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 0;
+    left: 7em;
+    display: none;
+}
+
+nav li:hover>ul{
+    display: block;
+}
+
+[name="Home"]:hover {
+    background: rgb(240, 216, 216);
+}
+
+[name="Services"]:hover {
+    background: rgb(252, 236, 236);
+}
+
+[name="Strategy"]:hover {
+    background: rgb(240, 216, 216);
+}
+
+[name="Optimization"]:hover {
+    background: rgb(240, 216, 216);
+}
+
+[name="Publication"]:hover {
+    background: rgb(252, 236, 236);
+}
+
+[name="Articles"]:hover {
+    background: rgb(240, 216, 216);
+}
+
+[name="Wikipedia"]:hover {
+    background: rgb(226, 178, 178);
+}
+
+[name="Poetica"]:hover {
+    background: rgb(226, 178, 178);
+}
+
+[name="Tutorial"]:hover {
+    background: rgb(240, 216, 216);
+}
+
+[name="Events"]:hover {
+    background: rgb(240, 216, 216);
+}
+
+[name="Contact"]:hover {
+    background: rgb(240, 216, 216);
+}
+
+.vl {
+    border-left: 2px solid gray;
+    height: 100%;
+    position: absolute;
+    left: 7.5em;
+    margin-left: 0;
+    top: 80px;
+}
+
+#content {
+    margin-top:-22%;
+    margin-left:20%;
+}
