@@ -1,82 +1,64 @@
+h1 {
+    width:100%;
+}
+
+div {
+    display:flex;
+    border-top: 1px solid gray;
+}
+
+div>p {
+    margin:0;
+    padding-left: 1em;
+    padding-top: 1em;
+    border-left: 1px solid gray;
+}
+
 nav ul {
-    margin: 0;
-    padding: 0;
-    top:-8px;
+    top:0;
+    margin:0;
+    padding:0;
+    list-style:none;
     text-decoration: none;
-    color:blue;
-    z-index:2;
 }
 
 nav li {
-    position: relative;
-    list-style: none;
-    margin-bottom: 2px;
-    /* background: rgb(219, 159, 159); */
-    display: block;
-    padding: 0.25em 0 0.25em 0.5em;
     width: 6.5em;
+    padding: 0.25em 0.25em;
+    display:block;
+    position:relative;
 }
 
-nav ul ul{
-    position: absolute;
-    top: 0;
-    left: 7em;
-    display: none;
+nav ul ul {
+    display:none;
+    position:absolute;
+    left:4em;
 }
 
-nav li:hover>ul{
-    display: block;
+li:hover>ul{
+    display:block;
 }
 
-[name="Home"]:hover {
-    background: rgb(240, 216, 216);
+nav>ul {
+    z-index: 3;
 }
 
-[name="Services"]:hover {
-    background: rgb(252, 236, 236);
+nav>ul>li>ul {
+    z-index: 2;
 }
 
-[name="Strategy"]:hover {
-    background: rgb(240, 216, 216);
+nav>ul>li>ul>li>ul {
+    z-index: 1;
 }
 
-[name="Optimization"]:hover {
-    background: rgb(240, 216, 216);
+nav>ul>li:hover {
+    background-color:rgb(240, 216, 216);
 }
 
-[name="Publication"]:hover {
-    background: rgb(252, 236, 236);
+nav>ul>li>ul>li:hover {
+    background-color:rgb(233, 197, 197);
 }
 
-[name="Articles"]:hover {
-    background: rgb(240, 216, 216);
-}
-
-[name="Wikipedia"]:hover {
-    background: rgb(226, 178, 178);
-}
-
-[name="Poetica"]:hover {
-    background: rgb(226, 178, 178);
-}
-
-[name="Tutorial"]:hover {
-    background: rgb(240, 216, 216);
-}
-
-[name="Events"]:hover {
-    background: rgb(240, 216, 216);
-}
-
-[name="Contact"]:hover {
-    background: rgb(240, 216, 216);
-}
-
-.vl {
-    border-left: 2px solid gray;
-    height: 100%;
-    position: absolute;
-    left: 7.5em;
-    margin-left: 0;
-    top: 80px;
+nav>ul>li>ul>li>ul>li:hover {
+    background-color:rgb(226, 178, 178);
 }
