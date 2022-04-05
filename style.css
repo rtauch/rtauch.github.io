@@ -14,12 +14,17 @@ div>p {
     border-left: 1px solid gray;
 }
 
+nav {
+    background-color: honeydew;
+}
+
 nav ul {
-    top:0;
+    top: -1px;
     margin:0;
     padding:0;
     list-style:none;
     text-decoration: none;
+    color: blue;
 }
 
 nav li {
@@ -29,10 +34,19 @@ nav li {
     position:relative;
 }
 
+nav>ul>li li {
+    border:1px solid gray;
+    background-color: white;
+}
+
+nav li:not(:first-child) {
+    margin-top: -1px;
+}
+
 nav ul ul {
     display:none;
     position:absolute;
-    left:4em;
+    left: 7em;
 }
 
 li:hover>ul{
